@@ -55,6 +55,7 @@ group :development, :test do
   gem 'capybara'
   gem 'pry'
   gem "orderly"
+  gem "faraday"
 end
 
 group :development do
