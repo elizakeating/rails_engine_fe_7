@@ -56,6 +56,7 @@ group :development, :test do
   gem 'pry'
   gem "orderly"
   gem "faraday"
+  gem "launchy"
 end
 
 group :development do
