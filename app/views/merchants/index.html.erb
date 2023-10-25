@@ -3,7 +3,7 @@
 <center>
 <section id="merchants">
   <% @merchants.each do |merchant| %>
-    <h3><%= link_to merchant[:attributes][:name], "/merchants/#{merchant[:id]}" %></h3>
+    <h3><%= link_to merchant.name, "/merchants/#{merchant.id}" %></h3>
   <% end %> 
 </section>
 </center>

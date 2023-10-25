@@ -1,9 +1,9 @@
-<center><h1><%= @merchant[:attributes][:name] %></h1></center>
+<center><h1><%= @merchant.name %></h1></center>
 
 <center>
   <section id="items">
     <% @items.each do |item| %>
-      <h3><%= item[:attributes][:name] %></h3>
+      <h3><%= item.name %></h3>
     <% end %>
   </section>
 </center>
