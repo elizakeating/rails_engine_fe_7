@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe "Merchants Index", type: :feature do
   it "when I visit /merchants I should see a list of merchants by name, each being a link that takes me to their show page" do
-    visit "/merchants"
+    visit merchants_path
 
     expect(page).to have_content("Merchants")
 
