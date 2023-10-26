@@ -15,7 +15,7 @@ RSpec.describe "Merchants Index", type: :feature do
       expect("Smitham LLC").to appear_before("Glover Inc")
 
       click_link("Schroeder-Jerde")
-      expect(current_path).to eq("/merchants/1")
+      expect(current_path).to eq(merchant_path(1))
     end
   end
 end

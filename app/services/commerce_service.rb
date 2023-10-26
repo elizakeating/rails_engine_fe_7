@@ -11,6 +11,14 @@ class CommerceService
     get_url("/api/v1/merchants/#{merchant}/items")
   end
 
+  def get_items
+    get_url("api/v1/items")
+  end
+
+  def get_item(item)
+    get_url("api/v1/items/#{item}")
+  end
+
   def get_url(url)
     response = conn.get(url)
     JSON.parse(response.body, symbolize_names: true)
