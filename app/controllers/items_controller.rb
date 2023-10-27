@@ -4,7 +4,7 @@ class ItemsController < ApplicationController
   end
 
   def show
-    @item = facade.item(params[:id])
+    @item = facade.item
   end
 
   private
