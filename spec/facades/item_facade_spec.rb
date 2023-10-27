@@ -12,5 +12,11 @@ RSpec.describe ItemFacade do
       expect(@facade.items.first).to be_an(Item)
      end
     end
+
+    describe "#item" do
+     it "should retunr a singular item" do
+      expect(@facade.item).to be_an(Item)
+     end
+    end
   end
 end
