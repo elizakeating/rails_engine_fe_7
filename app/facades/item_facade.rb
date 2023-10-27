@@ -15,8 +15,8 @@ class ItemFacade
     end
   end
 
-  def item(item)
-    json = service.get_item(item)
+  def item
+    json = service.get_item(@item)
 
     Item.new(json[:data])
   end
