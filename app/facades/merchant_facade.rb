@@ -15,14 +15,14 @@ class MerchantFacade
     end
   end
 
-  def merchant(merchant)
-    json = service.get_merchant(merchant)
+  def merchant
+    json = service.get_merchant(@merchant)
 
     Merchant.new(json[:data])
   end
 
-  def merchant_items(merchant)
-    json = service.get_merchant_items(merchant)
+  def merchant_items
+    json = service.get_merchant_items(@merchant)
     
     json[:data].map do |item_data|
       Item.new(item_data)
